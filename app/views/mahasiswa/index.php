@@ -1,16 +1,14 @@
+<h3 class="mb-3">Daftar Mahasiswa</h3>
+
 <div class="row">
-  <?php foreach($data['mhs'] as $mhs): ?>
-    <div class="col-4">
-      <div class="card">
-        <div class="card-body">
-          <h4><?= $mhs['nama'] ?></h4>
-          <ul>
-            <li>Email: <?= $mhs['email'] ?></li>
-            <li>NRP: <?= $mhs['nrp'] ?></li>
-            <li>Jurusan: <?= $mhs['jurusan'] ?></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  <?php endforeach ?>
+  <div class="col-4">
+    <ul class="list-group">
+      <?php foreach($data['mhs'] as $mhs): ?>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <?= $mhs['nama'] ?>
+          <a href="<?= BASEURL ?>/mahasiswa/detail/<?= $mhs['id'] ?>" class="badge badge-primary">Detail</a>
+        </li>
+      <?php endforeach ?>
+    </ul>
+  </div>
 </div>
