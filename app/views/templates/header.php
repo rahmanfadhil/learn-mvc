@@ -6,6 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><?= $data['title'] ?></title>
 
-  <link rel="stylesheet" href="http://localhost/learn_mvc/public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?= BASEURL ?>/css/bootstrap.min.css">
 </head>
 <body>
