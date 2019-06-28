@@ -1,3 +1,9 @@
+<div class="row">
+  <div class="col-4">
+    <?= Flasher::flash() ?>
+  </div>
+</div>
+
 <h3 class="mb-3">Daftar Mahasiswa</h3>
 
 <div class="row">
